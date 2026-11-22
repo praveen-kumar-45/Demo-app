@@ -1,8 +1,8 @@
-FROM openjdk:17
-
-COPY target/demo-app.jar  /usr/app/
+FROM eclipse-temurin:17-jdk
 
 WORKDIR /usr/app/
+
+COPY target/demo-app.jar /usr/app/
 
 EXPOSE 8080
 
